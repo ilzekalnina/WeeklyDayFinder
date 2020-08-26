@@ -78,7 +78,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="103.5" id="Ptn-zK-8ow"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="VFU-1W-NxA"/>
                                                 </connections>
@@ -91,7 +91,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="103.5" id="d3A-oW-OoO"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="zbj-p5-K7v"/>
                                                 </connections>
@@ -104,7 +104,7 @@
                                                     <constraint firstAttribute="height" constant="18.5" id="YW9-OR-xRI"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="gMY-xf-hpC"/>
                                                 </connections>
@@ -124,7 +124,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="NzB-RS-UZh"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boA-L4-Wk3">
