@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -15,9 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DayFinder" translatesAutoresizingMaskIntoConstraints="NO" id="Hms-8n-CSd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DayFinder" translatesAutoresizingMaskIntoConstraints="NO" id="Hms-8n-CSd">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Your Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQv-qw-OnG">
                                 <rect key="frame" x="70" y="106" width="180.5" height="30"/>
@@ -146,12 +145,16 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Hms-8n-CSd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1bx-Wl-FAZ"/>
                             <constraint firstItem="j1O-zr-cPg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="2V8-DH-EcZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IQv-qw-OnG" secondAttribute="trailing" constant="69.5" id="4o9-63-tqS"/>
                             <constraint firstItem="IQv-qw-OnG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="ARY-Vp-Nuh"/>
+                            <constraint firstItem="Hms-8n-CSd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ILR-xW-A0b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hzi-zp-dj2" secondAttribute="trailing" constant="92.5" id="INc-SM-KBI"/>
                             <constraint firstItem="Hzi-zp-dj2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="Rb1-Qq-26v"/>
+                            <constraint firstItem="Hms-8n-CSd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="SJi-T7-J5s"/>
                             <constraint firstItem="Hzi-zp-dj2" firstAttribute="top" secondItem="j1O-zr-cPg" secondAttribute="bottom" constant="41.5" id="Wmf-t2-PQ6"/>
+                            <constraint firstItem="Hms-8n-CSd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XP3-Sb-L4r"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j1O-zr-cPg" secondAttribute="trailing" constant="42" id="cEf-VH-vEO"/>
                             <constraint firstItem="IQv-qw-OnG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="hKF-H0-oRX"/>
                             <constraint firstItem="j1O-zr-cPg" firstAttribute="top" secondItem="IQv-qw-OnG" secondAttribute="bottom" constant="30" id="hfY-B8-HXa"/>
