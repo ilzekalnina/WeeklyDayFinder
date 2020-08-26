@@ -164,6 +164,7 @@
                     <navigationItem key="navigationItem" title="Day Finder" id="QSO-pt-ZlH"/>
                     <connections>
                         <outlet property="dayTextField" destination="Fo0-1d-q8K" id="8Bl-dV-bA7"/>
+                        <outlet property="findButton" destination="boA-L4-Wk3" id="vEl-xI-dxy"/>
                         <outlet property="monthTextField" destination="wht-NX-vut" id="LRh-JB-Jec"/>
                         <outlet property="resultLabel" destination="jlb-ZL-xkB" id="duo-rh-FNK"/>
                         <outlet property="yearTextField" destination="3uH-87-cR9" id="twt-VX-Hdw"/>
