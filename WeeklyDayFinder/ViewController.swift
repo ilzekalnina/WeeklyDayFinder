@@ -35,7 +35,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func handleCalculation(){
         let calendar = Calendar.current
         var dateComponent = DateComponents()
-        guard let day = dayTextField.text, let month = monthTextField, let year = yearTextField.text else {
+        guard let day = dayTextField.text, let month = monthTextField.text, let year = yearTextField.text else {
+            print("calendar.date err")
             return
             
         }
@@ -50,7 +51,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         dateFormatter.locale = Locale(identifier: "en_EN")
         dateFormatter.dateFormat = "EEEE"
         
-        let weekday = dateFormatter.string(from: date)
+        let weekday = dateFormatter.string(from: date!)
         
         let capitalizedWeekday = weekday.capitalized
         
@@ -60,6 +61,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
 
     @IBAction func findWeekDayTapped(_ sender: Any) {
+        handleCalculation()
     }
     
 }

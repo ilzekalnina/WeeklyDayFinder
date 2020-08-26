@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hZk-G4-pht">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DayFinder" translatesAutoresizingMaskIntoConstraints="NO" id="Hms-8n-CSd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DayFinder" translatesAutoresizingMaskIntoConstraints="NO" id="Hms-8n-CSd">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -161,7 +161,6 @@
                     <navigationItem key="navigationItem" title="Day Finder" id="QSO-pt-ZlH"/>
                     <connections>
                         <outlet property="dayTextField" destination="Fo0-1d-q8K" id="8Bl-dV-bA7"/>
-                        <outlet property="findWeekDayTapped" destination="boA-L4-Wk3" id="vz3-5Z-67W"/>
                         <outlet property="monthTextField" destination="wht-NX-vut" id="LRh-JB-Jec"/>
                         <outlet property="resultLabel" destination="jlb-ZL-xkB" id="duo-rh-FNK"/>
                         <outlet property="yearTextField" destination="3uH-87-cR9" id="twt-VX-Hdw"/>
