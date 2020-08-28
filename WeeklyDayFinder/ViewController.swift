@@ -68,11 +68,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
             clearTextField()
         }
         
-//        let weekday = dateFormatter.string(from: date!)
-//
-//        let capitalizedWeekday = weekday.capitalized
-//
-//        resultLabel.text = weekday
+        //        let weekday = dateFormatter.string(from: date!)
+        //
+        //        let capitalizedWeekday = weekday.capitalized
+        //
+        //        resultLabel.text = weekday
         
     }
     
@@ -98,6 +98,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func findWeekDayTapped(_ sender: Any) {
         handleCalculation()
     }
+    
+    
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "infoSegue" {
+        // Get the new view controller using segue.destination.
+            let vc = segue.destination as! InfoViewController
+    //Now it's possible to connect to everything what is in InfoViewController, for example there was declared empty infoText variable which now can be used
+        // Pass the selected object to the new view controller.
+            vc.infoText = "Day Finder helps you to find\n your weekday for given date."
+            
+        }
+
+
+    }
+    
     
 }
 
