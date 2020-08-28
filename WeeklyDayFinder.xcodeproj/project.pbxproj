@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		770EB3A324F8B83300BD6A79 /* AppearenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770EB3A224F8B83300BD6A79 /* AppearenceViewController.swift */; };
+		770EB3A524F8F62200BD6A79 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770EB3A424F8F62200BD6A79 /* InfoViewController.swift */; };
 		7715183E24F6A01000BE83B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715183D24F6A01000BE83B2 /* AppDelegate.swift */; };
 		7715184024F6A01000BE83B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715183F24F6A01000BE83B2 /* SceneDelegate.swift */; };
 		7715184224F6A01000BE83B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715184124F6A01000BE83B2 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		770EB3A224F8B83300BD6A79 /* AppearenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearenceViewController.swift; sourceTree = "<group>"; };
+		770EB3A424F8F62200BD6A79 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		7715183A24F6A01000BE83B2 /* WeeklyDayFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeeklyDayFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7715183D24F6A01000BE83B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7715183F24F6A01000BE83B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				7715184624F6A01300BE83B2 /* Assets.xcassets */,
 				7715184824F6A01300BE83B2 /* LaunchScreen.storyboard */,
 				7715184B24F6A01300BE83B2 /* Info.plist */,
+				770EB3A224F8B83300BD6A79 /* AppearenceViewController.swift */,
+				770EB3A424F8F62200BD6A79 /* InfoViewController.swift */,
 			);
 			path = WeeklyDayFinder;
 			sourceTree = "<group>";
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770EB3A324F8B83300BD6A79 /* AppearenceViewController.swift in Sources */,
 				7715184224F6A01000BE83B2 /* ViewController.swift in Sources */,
 				7715183E24F6A01000BE83B2 /* AppDelegate.swift in Sources */,
 				7715184024F6A01000BE83B2 /* SceneDelegate.swift in Sources */,
+				770EB3A524F8F62200BD6A79 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

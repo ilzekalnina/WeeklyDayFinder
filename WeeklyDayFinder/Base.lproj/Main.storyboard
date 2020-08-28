@@ -159,9 +159,15 @@
                     <navigationItem key="navigationItem" title="Day Finder" id="QSO-pt-ZlH">
                         <barButtonItem key="leftBarButtonItem" image="info.circle.fill" catalog="system" id="8I7-Hn-wfj">
                             <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <segue destination="86r-Z8-JQV" kind="presentation" id="Sjy-J8-UoS"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="moon.circle.fill" catalog="system" id="ofl-Za-0dX">
                             <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <segue destination="Nmq-ec-pGW" kind="show" id="xM3-M0-3pv"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -175,6 +181,92 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1136.25" y="126.7605633802817"/>
+        </scene>
+        <!--Appearence View Controller-->
+        <scene sceneID="ynd-ff-IbI">
+            <objects>
+                <viewController id="Nmq-ec-pGW" customClass="AppearenceViewController" customModule="WeeklyDayFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wJa-Zk-yyg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="1vo-Zq-0Cj">
+                                <rect key="frame" x="95" y="243.5" width="130.5" height="81.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light Mode Is On" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CT-nT-25v">
+                                        <rect key="frame" x="0.0" y="0.0" width="130.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euH-zv-q5B">
+                                        <rect key="frame" x="0.0" y="51.5" width="130.5" height="30"/>
+                                        <state key="normal" title="Open Settings"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1vo-Zq-0Cj" firstAttribute="centerX" secondItem="wJa-Zk-yyg" secondAttribute="centerX" id="GTs-OG-xWT"/>
+                            <constraint firstItem="1vo-Zq-0Cj" firstAttribute="centerY" secondItem="wJa-Zk-yyg" secondAttribute="centerY" id="rGe-LY-64k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TXe-jj-cAu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="35t-C0-mtM"/>
+                    <connections>
+                        <outlet property="textLabel" destination="3CT-nT-25v" id="TCF-3j-Gld"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GBb-e9-hXV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1976.25" y="-179.57746478873239"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="k7P-dN-Io1">
+            <objects>
+                <viewController id="86r-Z8-JQV" customClass="InfoViewController" customModule="WeeklyDayFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G6n-kV-vNa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bc-cb-umi">
+                                <rect key="frame" x="243" y="37" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RO8-WU-TT4"/>
+                                    <constraint firstAttribute="width" constant="40" id="haM-HD-xqq"/>
+                                </constraints>
+                                <state key="normal" image="clear.fill" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0e-mi-Xnu">
+                                <rect key="frame" x="128" y="263.5" width="64.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zlf-xB-HLE">
+                                <rect key="frame" x="56" y="507" width="208" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mpA-3q-pyV" firstAttribute="bottom" secondItem="Zlf-xB-HLE" secondAttribute="bottom" constant="20" id="KIG-Rn-TxW"/>
+                            <constraint firstItem="mpA-3q-pyV" firstAttribute="trailing" secondItem="7bc-cb-umi" secondAttribute="trailing" constant="37" id="KV9-wH-bcz"/>
+                            <constraint firstItem="7bc-cb-umi" firstAttribute="top" secondItem="mpA-3q-pyV" secondAttribute="top" constant="37" id="LbF-3d-ica"/>
+                            <constraint firstItem="mpA-3q-pyV" firstAttribute="trailing" secondItem="Zlf-xB-HLE" secondAttribute="trailing" constant="56" id="MMt-M5-XKD"/>
+                            <constraint firstItem="V0e-mi-Xnu" firstAttribute="centerY" secondItem="G6n-kV-vNa" secondAttribute="centerY" id="WtB-6j-cld"/>
+                            <constraint firstItem="V0e-mi-Xnu" firstAttribute="centerX" secondItem="G6n-kV-vNa" secondAttribute="centerX" id="Y3g-XJ-Gy4"/>
+                            <constraint firstItem="Zlf-xB-HLE" firstAttribute="leading" secondItem="mpA-3q-pyV" secondAttribute="leading" constant="56" id="Yey-AM-Jtu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mpA-3q-pyV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="82T-aG-nw8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1974.375" y="573.5915492957746"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="y7f-Dc-Ecb">
@@ -200,6 +292,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="clear.fill" catalog="system" width="128" height="114"/>
         <image name="day" width="1600" height="1200"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="moon.circle.fill" catalog="system" width="128" height="121"/>
